@@ -10,7 +10,16 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
 	cache = require('gulp-cache'),
 	livereload = require('gulp-livereload'),
-	del = require('del');
+	del = require('del'),
+	jade = require('gulp-jade');
+
+gulp.task('templates', function () {
+	gulp.src('*.jade')
+		.pipe(jade({
+			pretty: true
+		}))
+		.pipe(gulp.dest('./dist/'))
+});
 
 gulp.task('styles', function () {
 	return sass('css/main.scss.haml', { style: 'expanded' })
@@ -50,6 +59,9 @@ gulp.task('watch', function () {
 
 	// watch image files
 	gulp.watch('img/**/*', ['images']);
+
+	// watch template files
+	gulp.watch('*.jade', ['templates']);
 });
 
 gulp.task('clean', function (cb) {
@@ -57,5 +69,5 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('default', ['clean'], function() {
-  gulp.start('styles', 'scripts', 'images');
+  gulp.start('styles', 'scripts', 'images', 'templates');
 });
