@@ -21,8 +21,13 @@ gulp.task('templates', function () {
 		.pipe(gulp.dest('./dist/'))
 });
 
+var stylesSource = {
+	sass: 'css/sass/',
+	scss: 'css/sass/**/*.scss',
+}
+
 gulp.task('styles', function () {
-	return sass('css/main.scss.haml', { style: 'expanded' })
+	return sass(stylesSource.sass, { style: 'expanded' })
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(rename({ suffix: '.min'}))
@@ -52,7 +57,7 @@ gulp.task('images', function () {
 
 gulp.task('watch', function () {
 	// watch .scss files
-	gulp.watch('css/.scss', ['styles']);
+	gulp.watch(stylesSource.scss, ['styles']);
 
 	// watch .js files
 	gulp.watch('js/*.js', ['scripts']);
@@ -69,5 +74,5 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('default', ['clean'], function() {
-  gulp.start('styles', 'scripts', 'images', 'templates');
+  gulp.start('styles', 'scripts', 'images', 'templates', 'watch');
 });
