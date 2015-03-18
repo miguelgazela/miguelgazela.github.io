@@ -1,0 +1,27 @@
+{
+  "name": "miguelgazela",
+  "version": "0.1.0",
+  "homepage": "https://github.com/miguelgazela/miguelgazela.github.io",
+  "authors": [
+    "Miguel Oliveira <miguel.gazela@gmail.com>"
+  ],
+  "description": "Personal website",
+  "main": "index.html",
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "animate.css": "~3.2.3",
+    "fontawesome": "~4.3.0",
+    "moment": "~2.9.0"
+  }
+}
