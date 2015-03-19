@@ -1,3 +1,19 @@
-.body {
-	background-color: #FFF
+* {
+	box-sizing: border-box;
+
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
