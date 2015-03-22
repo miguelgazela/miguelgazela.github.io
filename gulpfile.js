@@ -57,7 +57,7 @@ gulp.task('images', function () {
 
 gulp.task('watch', function () {
 	// watch .scss files
-	gulp.watch(stylesSource.scss, ['styles']);
+	gulp.watch(stylesSource.scss, ['styles', 'templates']);
 
 	// watch .js files
 	gulp.watch('js/*.js', ['scripts']);

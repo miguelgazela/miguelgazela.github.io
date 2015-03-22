@@ -1,22 +1,30 @@
 doctype html
 html(lang="en")
-	head
-		meta(chartset="utf-8")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		meta(name="description", content="My personal website")
-		meta(name="author", content="migueloliveira")
+    head
+        meta(chartset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="My personal website")
+        meta(name="author", content="migueloliveira")
 
-		title Miguel Oliveira
+        title Miguel Oliveira
 
-		link(rel="stylesheet", href="bower_components/normalize.css/normalize.css")
-		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans")
-		link(rel="stylesheet", href="dist/css/main.css")
+        link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans")
+        link(rel="stylesheet", href="dist/css/main.css")
 
-	body
-		.content
-			h1#greeting
-			h3#short-bio
+    body
+        
+        .jumbotron
+            .logo
+            h1 Olá, my name is 
+                span Miguel Oliveira.
+            h1 I'm a software developer & designer. 
+            h1 I build 
+                span Web Apps
 
-	script(src="bower_components/jquery/dist/jquery.min.js")
-	script(src="bower_components/TheaterJS/build/theater.min.js")
-	script(src="dist/js/main.js")
+        .about
+            h1.title About
+
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/TheaterJS/build/theater.min.js")
+    //script(src="dist/js/main.js")
