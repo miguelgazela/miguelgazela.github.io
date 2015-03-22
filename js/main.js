@@ -3,13 +3,15 @@ $(document).ready(function() {
 	var theater = new TheaterJS();
 
 	// describre actors
-	theater
-		.describe("Greeting", .8, "#greeting")
-		.describe("Bio", .8, "#short-bio");
+	theater.describe("Miguel", .8, "#products");
 
-	// write the scenario
+    setInterval(function (){
+        // write the scenario
 	theater
-		.write("Greeting:Hi, my name is Miguel Oliveira,", 600)
-		.write("Bio:I'm a software engineer", 600);
+		.write("Miguel:Web Apps", 600)
+		.write("Miguel:OSX Apps", 2000);
+    }, 3000);
+
+	
 
 });
