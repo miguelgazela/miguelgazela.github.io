@@ -1,12 +1,81 @@
 body {
-  background: #eeeeee; }
+  background: #eeeeee;
+  padding-top: 50px; }
 
-#phone-emulator {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 320px;
-  height: 568px;
-  background-color: white;
-  box-shadow: 0px 0px 10px #c2c2c2; }
+.navbar-default {
+  background-color: #36a0d5;
+  color: white; }
+
+.navbar-default .navbar-brand {
+  color: white; }
+
+section h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  color: #36a0d5; }
+
+.list-group {
+  margin-bottom: 0; }
+
+.class-list .list-group-item:first-child, .class-list .list-group-item:last-child {
+  border-radius: 0; }
+.class-list .list-group-item.class-day {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 14px;
+  position: relative;
+  min-height: 60px; }
+  .class-list .list-group-item.class-day .class-day-column {
+    display: block;
+    float: left;
+    height: 36px; }
+    .class-list .list-group-item.class-day .class-day-column.class-day-column-date {
+      text-align: center;
+      padding-right: 7px;
+      border-right: 1px solid #eeeeee; }
+      .class-list .list-group-item.class-day .class-day-column.class-day-column-date p:first-child {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        color: #787878;
+        font-weight: bold;
+        margin-bottom: 0; }
+        .class-list .list-group-item.class-day .class-day-column.class-day-column-date p:first-child.class-day-column-date-today {
+          color: #de5555; }
+      .class-list .list-group-item.class-day .class-day-column.class-day-column-date p:last-child {
+        font-size: 10px;
+        line-height: 12px; }
+    .class-list .list-group-item.class-day .class-day-column.class-day-column-description {
+      margin-left: 10px; }
+      .class-list .list-group-item.class-day .class-day-column.class-day-column-description p:first-child {
+        margin: 0;
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #787878; }
+      .class-list .list-group-item.class-day .class-day-column.class-day-column-description p:last-child {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 400;
+        margin-top: 3px; }
+  .class-list .list-group-item.class-day .glyphicon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.class-hour-list .class-hour-list-item {
+  height: 90px; }
+  .class-hour-list .class-hour-list-item .class-hour-column {
+    display: block;
+    float: left; }
+  .class-hour-list .class-hour-list-item .class-hour-column-info {
+    margin-left: 10px; }
+  .class-hour-list .class-hour-list-item .class-hour-time {
+    color: #787878;
+    font-size: 14px; }
+  .class-hour-list .class-hour-list-item:last-child {
+    border-bottom: 0; }

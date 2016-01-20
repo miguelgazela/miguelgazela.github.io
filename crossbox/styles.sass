@@ -1,12 +1,112 @@
-body
-  background: #eee
+$primary-color: #36A0D5
+$app-red: #DE5555
 
-#phone-emulator
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  width: 320px
-  height: 568px
-  background-color: #fff
-  box-shadow: 0px 0px 10px #c2c2c2
+$light-ui-grey: #eee
+
+$text-dark-grey: #787878
+
+
+body
+  background: $light-ui-grey
+  padding-top: 50px
+
+.navbar-default
+  background-color: $primary-color
+  color: white
+
+.navbar-default .navbar-brand
+  color: white
+
+section h2
+  margin-top: 15px
+  margin-bottom: 10px
+  font-size: 13px
+  margin-left: 10px
+  letter-spacing: 1px
+  color: $primary-color
+
+.list-group
+  margin-bottom: 0
+
+.class-list
+
+  .list-group-item
+
+    &:first-child,
+    &:last-child
+      border-radius: 0
+
+    &.class-day
+      padding-top: 11px
+      padding-bottom: 11px
+      padding-left: 14px
+      position: relative
+      min-height: 60px
+
+      .class-day-column
+        display: block
+        float: left
+        height: 36px
+
+        &.class-day-column-date
+          text-align: center
+          padding-right: 7px
+          border-right: 1px solid $light-ui-grey
+
+          p:first-child
+            font-size: 22px
+            line-height: 24px
+            letter-spacing: 2px
+            color: $text-dark-grey
+            font-weight: bold
+            margin-bottom: 0
+
+            &.class-day-column-date-today
+              color: $app-red
+
+          p:last-child
+            font-size: 10px
+            line-height: 12px
+
+        &.class-day-column-description
+
+          margin-left: 10px
+
+          p:first-child
+            margin: 0
+            margin-top: 4px
+            font-size: 12px
+            line-height: 14px
+            color: $text-dark-grey
+
+          p:last-child
+            font-size: 11px
+            line-height: 13px
+            font-weight: 400
+            margin-top: 3px
+
+      .glyphicon
+        position: absolute
+        right: 15px
+        top: 50%
+        transform: translateY(-50%)
+
+.class-hour-list
+
+  .class-hour-list-item
+
+    .class-hour-column
+      display: block
+      float: left
+
+    .class-hour-column-info
+      margin-left: 10px
+
+    .class-hour-time
+      color: $text-dark-grey
+      font-size: 14px
+
+    height: 90px
+
+    &:last-child
+      border-bottom: 0
