@@ -1,13 +1,16 @@
 $primary-color: #36A0D5
 $app-red: #DE5555
+$app-green: #9bd777
 
-$light-ui-grey: #eee
+$ui-light-grey: #eee
+$ui-dark-grey: #909090
 
 $text-dark-grey: #787878
+$text-medium-grey: $ui-dark-grey
 
 
 body
-  background: $light-ui-grey
+  background: $ui-light-grey
   padding-top: 50px
 
 .navbar-default
@@ -51,7 +54,7 @@ section h2
         &.class-day-column-date
           text-align: center
           padding-right: 7px
-          border-right: 1px solid $light-ui-grey
+          border-right: 1px solid $ui-light-grey
 
           p:first-child
             font-size: 22px
@@ -90,10 +93,13 @@ section h2
         right: 15px
         top: 50%
         transform: translateY(-50%)
+        color: $ui-dark-grey
 
 .class-hour-list
 
   .class-hour-list-item
+    position: relative
+    height: 90px
 
     .class-hour-column
       display: block
@@ -102,11 +108,52 @@ section h2
     .class-hour-column-info
       margin-left: 10px
 
+      .class-hour-title
+        color: $text-dark-grey
+        font-size: 12px
+        margin-bottom: 3px
+
+      .class-hour-elements
+
+        img
+          height: 16px
+          width: 16px
+
+        span
+          color: $text-medium-grey
+          font-size: 12px
+
     .class-hour-time
       color: $text-dark-grey
-      font-size: 14px
-
-    height: 90px
+      font-size: 12px
 
     &:last-child
       border-bottom: 0
+
+    .class-hour-graphical-availability
+      width: 20px
+      height: 20px
+      background-color: #d8d8d8
+      position: absolute
+      top: 10px
+      right: 15px
+      text-align: center
+      font-size: 11px
+      line-height: 13px
+      color: white
+      border-radius: 2px
+      padding-top: 3px
+
+      &::after
+        content: ""
+        width: 100%
+        height: 50%
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $app-green
+        border-radius: 2px
+
+      div
+        position: relative
+        z-index: 2
