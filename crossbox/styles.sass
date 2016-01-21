@@ -78,15 +78,12 @@ section h2
           p:first-child
             margin: 0
             margin-top: 4px
-            font-size: 12px
-            line-height: 14px
+            font-size: 13px
             color: $text-dark-grey
 
           p:last-child
-            font-size: 11px
-            line-height: 13px
+            font-size: 12px
             font-weight: 400
-            margin-top: 3px
 
       .glyphicon
         position: absolute
@@ -110,22 +107,28 @@ section h2
 
       .class-hour-title
         color: $text-dark-grey
-        font-size: 12px
+        font-size: 13px
+        font-weight: bold
         margin-bottom: 3px
 
       .class-hour-elements
 
         img
-          height: 16px
-          width: 16px
+          height: 20px
+          width: 20px
+          border: 2px solid white
+
+          &:not(:first-of-type)
+            margin-left: -9px
 
         span
           color: $text-medium-grey
-          font-size: 12px
+          font-size: 13px
 
     .class-hour-time
       color: $text-dark-grey
-      font-size: 12px
+      font-size: 13px
+      font-weight: bold
 
     &:last-child
       border-bottom: 0

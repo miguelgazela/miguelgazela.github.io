@@ -53,14 +53,11 @@ section h2 {
       .class-list .list-group-item.class-day .class-day-column.class-day-column-description p:first-child {
         margin: 0;
         margin-top: 4px;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 13px;
         color: #787878; }
       .class-list .list-group-item.class-day .class-day-column.class-day-column-description p:last-child {
-        font-size: 11px;
-        line-height: 13px;
-        font-weight: 400;
-        margin-top: 3px; }
+        font-size: 12px;
+        font-weight: 400; }
   .class-list .list-group-item.class-day .glyphicon {
     position: absolute;
     right: 15px;
@@ -78,17 +75,22 @@ section h2 {
     margin-left: 10px; }
     .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-title {
       color: #787878;
-      font-size: 12px;
+      font-size: 13px;
+      font-weight: bold;
       margin-bottom: 3px; }
     .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-elements img {
-      height: 16px;
-      width: 16px; }
+      height: 20px;
+      width: 20px;
+      border: 2px solid white; }
+      .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-elements img:not(:first-of-type) {
+        margin-left: -9px; }
     .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-elements span {
       color: #909090;
-      font-size: 12px; }
+      font-size: 13px; }
   .class-hour-list .class-hour-list-item .class-hour-time {
     color: #787878;
-    font-size: 12px; }
+    font-size: 13px;
+    font-weight: bold; }
   .class-hour-list .class-hour-list-item:last-child {
     border-bottom: 0; }
   .class-hour-list .class-hour-list-item .class-hour-graphical-availability {
