@@ -9,6 +9,10 @@ body {
 .navbar-default .navbar-brand {
   color: white; }
 
+.btn-default {
+  background-color: #f0eff4;
+  color: #787878; }
+
 section h2 {
   margin-top: 15px;
   margin-bottom: 10px;
@@ -67,7 +71,8 @@ section h2 {
 
 .class-hour-list .class-hour-list-item {
   position: relative;
-  height: 90px; }
+  min-height: 90px;
+  overflow: auto; }
   .class-hour-list .class-hour-list-item .class-hour-column {
     display: block;
     float: left; }
@@ -87,6 +92,14 @@ section h2 {
     .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-elements span {
       color: #909090;
       font-size: 13px; }
+    .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-controls {
+      margin-top: 8px;
+      margin-bottom: 5px; }
+      .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-controls .btn {
+        padding-top: 2px;
+        padding-bottom: 2px; }
+        .class-hour-list .class-hour-list-item .class-hour-column-info .class-hour-controls .btn:not(:first-child) {
+          margin-left: 6px; }
   .class-hour-list .class-hour-list-item .class-hour-time {
     color: #787878;
     font-size: 13px;
