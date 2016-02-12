@@ -5,6 +5,17 @@
         <link>https://miguelgazela.github.io/m3/m3Appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
+
+        <item>
+            <title>Version 0.9.2 (1 new feature)</title>
+            <!-- <sparkle:releaseNotesLink>
+                http://you.com/app/2.0.html
+            </sparkle:releaseNotesLink> -->
+            <pubDate>Fri, 12 Fev 2016 11:09:11 +0000</pubDate>
+            <enclosure url="https://miguelgazela.github.io/m3/m3-0.9.2.zip" sparkle:version="0.9.2" length="6352655" type="application/octet-stream" sparkle:dsaSignature="MCwCFHz635OJ7UTjO0gY91x+hnzjIORBAhQp9FqOsPqxoUQUtBwiC/V6dBDGWg==" />
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
         <item>
             <title>Version 0.9.1 (2 bugs fixed; 3 new features)</title>
             <!-- <sparkle:releaseNotesLink>
