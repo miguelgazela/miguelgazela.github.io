@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Mailcube Changelog</title>
+        <link>https://miguelgazela.github.io/m3/m3Appcast.xml</link>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>Version 0.9.1 (2 bugs fixed; 3 new features)</title>
+            <!-- <sparkle:releaseNotesLink>
+                http://you.com/app/2.0.html
+            </sparkle:releaseNotesLink> -->
+            <pubDate>Fri, 12 Fev 2016 10:34:11 +0000</pubDate>
+            <enclosure url="https://miguelgazela.github.io/m3/m3-0.9.1.zip" sparkle:version="0.9.1" length="18622557" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCDAaqyElSP8ndH01Km7zMDRzsSsgIUFav8YpjEGYeXafO+r+DomH3D76s=" />
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+    </channel>
+</rss>
