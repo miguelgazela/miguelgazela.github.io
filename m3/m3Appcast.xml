@@ -7,6 +7,16 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.9.3.1</title>
+            <sparkle:releaseNotesLink>
+                https://miguelgazela.github.io/m3/releases-0.9.3.1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Mon, 15 Fev 2016 14:45:11 +0000</pubDate>
+            <enclosure url="https://miguelgazela.github.io/m3/m3-0.9.3.1.zip" sparkle:version="0.9.3.1" length="6354388" type="application/octet-stream" sparkle:dsaSignature="MCwCFAZV7cR+e6PxY7Us0k7FZfpKTs1gAhQUap3GOj6Gg8BOgNR9Uv2I9Y0U0Q==" />
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
             <title>Version 0.9.3</title>
             <sparkle:releaseNotesLink>
                 https://miguelgazela.github.io/m3/releases-0.9.3.html
